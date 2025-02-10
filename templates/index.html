@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Engineer Enhanced</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>AI Engineer Enhanced</h1>
+    <div class="container">
+        <!-- Code Solver Form -->
+        <form action="/solve" method="post">
+            <h2>Solve a Coding Problem</h2>
+            <textarea name="problem" placeholder="Describe your coding problem..."></textarea>
+            <button type="submit">Solve</button>
+        </form>
+
+        <!-- Design-to-Code Form -->
+         <form action="/generate" method="POST" enctype="multipart/form-data">
+            <h2>Upload Design (PNG/JPG)</h2>
+            <input type="file" name="image" accpet="image/*">
+            <button type="submit">Generate Code</button>
+        </form>
+    </div>
+</body>
+</html>
+            
